@@ -133,7 +133,7 @@ hr {
 .btn-custom {
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #6aaf08;
+	background-color: black;
 	padding: 14px 20px;
 	letter-spacing: 1px;
 	margin: 0;
@@ -145,7 +145,7 @@ hr {
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
-	background-color: #5f9d07;
+	background-color: black;
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -427,7 +427,7 @@ ol.type li a:hover {
 /* Contact Section */
 #contact {
 	padding: 100px 0;
-	background: rgb(48, 182, 7, 0.85);
+	background: #359b41;
 }
 #contact .section-title p {
 	color: #777;
