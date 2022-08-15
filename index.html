@@ -6,7 +6,7 @@
 <title>Viveros Quezada</title>
 <!-- Favicons
     ================================================== -->
-<link rel="shortcut icon" href="" type="image/x-icon">
+<link rel="shortcut icon" href="./img/logo_quezada.svg" type="image/x-icon">
 
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
@@ -23,6 +23,29 @@
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <style>
+    .text-animation {
+      color: transparent;
+      background-image: linear-gradient(to left, #bb0e09, #f6f6f6, #333333, #ffab91, #c62828);    
+      background-clip: text;
+      animation: color 3s linear infinite;
+      background-size: 500%;    
+    }
+
+    @keyframes color {
+        from {
+            background-position: 0% 50%;
+        }
+
+        to {
+            background-position: 100% 50%;
+        }
+    }
+  </style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +62,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a href="/"><img src="./img/logo.png" alt="logo" class="img-fluid" width="200"></a>
+      <a href="/"><img src="./img/logo_quezada_blanco.svg" alt="logo" class="img-fluid" width="180"></a>
     </div>
 
     
@@ -57,8 +80,43 @@
   </div>
   <!-- /.container-fluid --> 
 </nav>
+
+<!-- Carousel -->
+<div class="">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./img/portada_viveros_quezada1.svg" style="min-height: 60vh; width: 100%;">
+      </div>
+      <div class="item">
+        <img src="./img/portada_viveros_quezada2.svg" style="min-height: 60vh; width: 100%;">
+      </div>
+      <div class="item">
+        <img src="./img/portada_viveros_quezada3.svg" style="min-height: 60vh; width: 100%;">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+<!-- End Carouse -->
 <!-- Header -->
-<header id="header">
+<!--<header id="header">
   <div class="intro">
     <div class="overlay">
       <div class="container">
@@ -72,30 +130,31 @@
       </div>
     </div>
   </div>
-</header>
+</header>-->
+
 <!-- About Section -->
 <div id="about">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-6">
         <div class="about-text">
-          <h2>Bienvenidos a <span style="background: linear-gradient(white, #822817); -webkit-background-clip: text;
+          <h2 class="animate__animated animate__backInDown">Bienvenidos a <span style="background: linear-gradient(white, #bb0e09); -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;">Viveros Quezada</span></h2>
           <hr>
-          <p>Somos una empresa 100% mexicana que maneja una gran variedad de plantas, flores, arbustos y árboles frutales que le darán a su casa el espacio verde que siempre ha querido tener. Cada una de las plantas que producimos son de alta calidad, pues han sido cultivadas de forma minuciosa; esto nos permite asegurar que usted al salir de nuestras instalaciones se llevara plantas, flores y árboles que puedan darle un toque natural y refrescante a sus espacios.</p>
-          <p>Contamos con un departamento de recomendaciones, planeación y diseño de áreas de reforestación, cultivos y jardinería. Recibirá información sobre el tipo de árbol que embellezca más su jardín o sobre las plantas para interiores del hogar y los tipos de flores que pueda regalar en alguna fecha importante.</p>
+          <p class="animate__animated animate__backInDown">Somos una empresa 100% mexicana que maneja una gran variedad de plantas, flores, arbustos y árboles frutales que le darán a su casa el espacio verde que siempre ha querido tener. Cada una de las plantas que producimos son de alta calidad, pues han sido cultivadas de forma minuciosa; esto nos permite asegurar que usted al salir de nuestras instalaciones se llevara plantas, flores y árboles que puedan darle un toque natural y refrescante a sus espacios.</p>
+          <p class="animate__animated animate__backInDown">Contamos con un departamento de recomendaciones, planeación y diseño de áreas de reforestación, cultivos y jardinería. Recibirá información sobre el tipo de árbol que embellezca más su jardín o sobre las plantas para interiores del hogar y los tipos de flores que pueda regalar en alguna fecha importante.</p>
           <a href="#services" class="btn btn-custom btn-lg page-scroll">Ver todos nuestros servicios</a> </div>
       </div>
       <div class="col-xs-12 col-md-3">
-        <div class="about-media"> <img src="img/arquitectura-paisajes-min.png" alt="" style="box-shadow: 5px 5px 10px #999; border-bottom-left-radius: 10px; border-top-left-radius: 10px;"> </div>
+        <div class="about-media"> <img src="./img/portfolio/500x333/galeria_vivero500x333-20.jpg" alt="" style="box-shadow: 5px 5px 10px #999; border-bottom-left-radius: 10px; border-top-left-radius: 10px;"> </div>
         <div class="about-desc">
-          <h3>Arquitectura de paisajes</h3>
+          <!--<h3>Arquitectura de paisajes</h3>-->
         </div>
       </div>
       <div class="col-xs-12 col-md-3">
-        <div class="about-media"> <img src="img/arboles-min.png" alt=" " style="box-shadow: 5px 5px 10px #999; border-bottom-left-radius: 10px; border-top-left-radius: 10px;"> </div>
+        <div class="about-media"> <img src="img/portfolio/500x333/galeria_vivero500x333-10.jpg" alt=" " style="box-shadow: 5px 5px 10px #999; border-bottom-left-radius: 10px; border-top-left-radius: 10px;"> </div>
         <div class="about-desc">
-          <h3>Plantación y Transporte de árboles</h3>
+          <!--<h3>Plantación y Transporte de árboles</h3>-->
         </div>
       </div>
     </div>
@@ -105,37 +164,33 @@
 <div id="services">
   <div class="container">
     <div class="col-md-10 col-md-offset-1 section-title text-center">
-      <h2 style="background: linear-gradient(#822817, white); -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; font-weight: bold;">Nuestros servicios</h2>
+      <h2 class="text-animation" style="-webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">Nuestros servicios</h2>
       <hr>
     </div>
     <div class="row">
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="img/services/plantacion-arboles.jpg" alt=" "> </div>
         <div class="service-desc">
-          <h3>Plantación y Transporte de árboles</h3>
-         
+          <!--<h3>Plantación y Transporte de árboles</h3>-->
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="img/services/paisajes.JPG" alt=" "> </div>
         <div class="service-desc">
-          <h3>Arquitectura de paisajes</h3>
-          
+          <!--<h3>Arquitectura de paisajes</h3>-->
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="img/services/paisajismo-express.JPG" alt=" "> </div>
         <div class="service-desc">
-          <h3>Paisajismo express</h3>
-         
+          <!--<h3>Paisajismo express</h3>-->
         </div>
       </div>
       <div class="col-md-3 text-center">
         <div class="service-media"> <img src="img/services/arquictectura-express.JPG" alt=" "> </div>
         <div class="service-desc">
-          <h3>Damos solución a sus proyectos de reforestación</h3>
-         
+          <!--<h3>Damos solución a sus proyectos de reforestación</h3>-->
       </div>
     </div>
   </div>
@@ -395,5 +450,18 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<script>
+  $(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+  });
+</script>
 </body>
 </html>

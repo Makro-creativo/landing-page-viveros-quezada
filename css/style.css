@@ -81,8 +81,8 @@ hr {
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color:#359b41;
-	border-color: #359b41;
+	background-color:#bb0e09;
+	border-color: #bb0e09;
 }
 #menu a.navbar-brand {
 	font-size: 26px;
@@ -105,7 +105,7 @@ hr {
 	color: white;
 }
 .on {
-	background-color: #359b41 !important;
+	background-color: #bb0e09 !important;
 	padding: 0 !important;
 	padding: 15px 0 !important;
 }
@@ -121,7 +121,7 @@ hr {
 	border-color: #fff;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
-	background-color: #6aaf08;
+	background-color: white;
 }
 .section-title {
 	margin-bottom: 70px;
@@ -133,7 +133,7 @@ hr {
 .btn-custom {
 	text-transform: uppercase;
 	color: #fff;
-	background-color: black;
+	background-color: #bb0e09;
 	padding: 14px 20px;
 	letter-spacing: 1px;
 	margin: 0;
@@ -145,7 +145,7 @@ hr {
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
-	background-color: black;
+	background-color: #bb0e09;
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -171,9 +171,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro .overlay {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,70ad47+100&0.6+0,0.4+100 */
-	background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top, #bb0e09 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #bb0e09 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #bb0e09 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#6670ad47', GradientType=0 ); /* IE6-9 */
 }
 .intro .fa {
@@ -232,7 +232,7 @@ header .intro-text {
 	position: relative;
 	display: block;
 	width: 100%;
-	min-height: 33vh;
+	min-height: 30vh;
 }
 #about .about-text, #about .about-desc {
 	margin-bottom: 40px;
@@ -245,6 +245,7 @@ header .intro-text {
 #services {
 	padding: 120px 0;
 	background: #333333;
+	min-height: 80;
 }
 #services .service-media {
 	margin: 10px;
@@ -303,11 +304,11 @@ ol.type li a {
 	transition: all 0.3s;
 }
 ol.type li a.active {
-	background: #6aaf08;
+	background: black;
 	color: #fff;
 }
 ol.type li a:hover {
-	background: #6aaf08;
+	background: black;
 	color: #fff;
 }
 .isotope-item {
@@ -388,7 +389,8 @@ ol.type li a:hover {
 }
 #testimonials .overlay {
 	padding: 120px 0;
-	background: rgba(130, 40, 23, 0.85);
+	background: rgb(187,14,9);
+	background: linear-gradient(90deg, rgba(187,14,9,1) 0%, rgba(246,246,246,1) 100%);	
 }
 #testimonials h2 {
 	color: #fff;
@@ -427,7 +429,7 @@ ol.type li a:hover {
 /* Contact Section */
 #contact {
 	padding: 100px 0;
-	background: #359b41;
+	background: #bb0e09;
 }
 #contact .section-title p {
 	color: #777;
@@ -519,7 +521,7 @@ color: #777;
 	height: 40px;
 	padding: 10px;
 	background: #444;
-	color: #6aaf08;
+	color: white;
 	border-radius: 50%;
 	transition: all 0.3s;
 }
